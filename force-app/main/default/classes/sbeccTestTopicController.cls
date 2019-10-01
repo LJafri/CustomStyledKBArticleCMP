@@ -1,9 +1,5 @@
 @IsTest(SeeAllData=true)
 public class sbeccTestTopicController {
-    //Communities Varaibles
-    public static final List<Network> networks = [SELECT id, Name FROM Network];
-    public static final Id networkId = networks[0].id;
-    public static final String networkName = networks[0].Name;
     //Test Topic Varaibles
     public static final String TopicName = 'Test Topic Name';
     public static final String TopicName2 = 'Test Topic Name 2';
@@ -12,6 +8,13 @@ public class sbeccTestTopicController {
 
     @isTest(SeeAllData=true)
     static void testGetTopics() {
+      String networkId;
+      String networkName;
+      for (Sobject c : Database.query('SELECT Id, Name FROM Network')) {
+        networkId = (String)c.get('Id');
+        networkName = (String)c.get('name');
+        break;
+      }
         //Insert Featured Topics
         ConnectApi.ManagedTopic topic = ConnectApi.ManagedTopics.createManagedTopicByName(networkId, TopicName, ConnectApi.ManagedTopicType.Featured);
         ConnectApi.ManagedTopic topicTwo = ConnectApi.ManagedTopics.createManagedTopicByName(networkId, TopicName2, ConnectApi.ManagedTopicType.Featured);
@@ -22,6 +25,7 @@ public class sbeccTestTopicController {
         String topicId = topicFour.iD;
         //Start The Test
         Test.startTest();
+            
             //Test Featured Type
             List <ConnectApi.ManagedTopic> topics = sbeccTopicController.getTopics(networkName, 'Featured', topicId);
             //FAKE TEST

@@ -3,26 +3,14 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/ldsUtils": [
-                "ldsUtils/ldsUtils.js"
-            ],
             "c/sbeccArticle": [
                 "sbeccArticle/sbeccArticle.js"
-            ],
-            "c/sbeccControllerDebug": [
-                "sbeccControllerDebug/sbeccControllerDebug.js"
             ],
             "c/sbeccFeaturedTopics": [
                 "sbeccFeaturedTopics/sbeccFeaturedTopics.js"
             ],
             "c/sbeccFeaturedTopicsItem": [
                 "sbeccFeaturedTopicsItem/sbeccFeaturedTopicsItem.js"
-            ],
-            "c/sbeccTopicArticles": [
-                "sbeccTopicArticles/sbeccTopicArticles.js"
-            ],
-            "c/prettify": [
-                "../staticresources/sbeccStaticFiles/prettify/prettify.js"
             ]
         }
     },
