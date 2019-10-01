@@ -1,0 +1,128 @@
+.sbecc-featured-topics__item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+          box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+  clear: both;
+  overflow-y: auto; }
+
+.sbecc-featured-topics__item .icon-fake {
+  min-height: 120px; }
+
+.sbecc-featured-topics__item:hover {
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  text-decoration: none !important; }
+
+.sbecc-featured-topics__item .sbecc-featured-topics__item-header {
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2rem;
+  display: block; }
+
+.sbecc-featured-topics__item .sbecc-featured-topics__item-text {
+  width: 100%; }
+
+.sbecc-featured-topics__item .sbecc-featured-topics__item-image img {
+  margin: 0px auto;
+  display: block; }
+
+.sbecc-featured-topics__item .sbecc-featured-topics__item-wrap {
+  display: block;
+  padding: 1rem; }
+
+/* ICON TOP */
+/* ICON LEFT */
+.sbecc-featured-topics__item_icon-left .sbecc-featured-topics__item-wrap {
+  float: left;
+  width: 85%; }
+
+.sbecc-featured-topics__item_icon-left .sbecc-featured-topics__item-wrap .sbecc-featured-topics__item-header {
+  padding-left: 1rem; }
+
+.sbecc-featured-topics__item_icon-left .sbecc-featured-topics__item-wrap .sbecc-featured-topics__item-text {
+  padding-left: 1rem; }
+
+.sbecc-featured-topics__item_icon-left .sbecc-featured-topics__item-image {
+  float: left;
+  width: 15%; }
+
+.sbecc-featured-topics__item_icon-left .sbecc-featured-topics__item-image img {
+  vertical-align: middle; }
+
+/* ICON RIGHT */
+.sbecc-featured-topics__item_icon-right .sbecc-featured-topics__item-wrap {
+  float: right;
+  width: 85%; }
+
+.sbecc-featured-topics__item_icon-right .sbecc-featured-topics__item-wrap .sbecc-featured-topics__item-header {
+  padding-right: 1rem; }
+
+.sbecc-featured-topics__item_icon-right .sbecc-featured-topics__item-wrap .sbecc-featured-topics__item-text {
+  padding-right: 1rem; }
+
+.sbecc-featured-topics__item_icon-right .sbecc-featured-topics__item-image {
+  float: right;
+  width: 15%; }
+
+.sbecc-featured-topics__item_icon-right .sbecc-featured-topics__item-image img {
+  vertical-align: middle; }
+
+/* ICON BOTTOM */
+.sbecc-featured-topics__item_icon-bottom .sbecc-featured-topics__item-image img {
+  margin-top: 1rem; }
+
+/* COLOR OPTIONS */
+.sbecc-featured-topics__item.sbecc-featured-topics__item_bg-action {
+  -webkit-transition: background 2s ease;
+  transition: background 2s ease;
+  background: linear-gradient(45deg, var(--lwc-colorBackgroundButtonBrand), var(--lwc-colorBackgroundButtonBrandHover));
+  color: var(--lwc-colorTextButtonBrand); }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_bg-action:hover {
+  color: var(--lwc-colorTextInverse);
+  background: linear-gradient(85deg, var(--lwc-colorBackgroundButtonBrandHover), var(--lwc-colorBackgroundButtonBrand)); }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_bg-black {
+  background: #000; }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_bg-black:hover {
+  background: #111; }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_bg-white {
+  background: #fff; }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_bg-white:hover {
+  background: #fefefe; }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_fg-black {
+  color: #000; }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_fg-black:hover {
+  color: #111; }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_fg-white {
+  color: #fff; }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_fg-white:hover {
+  color: #eee; }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_fg-action {
+  color: var(--lwc-colorBrand); }
+
+.sbecc-featured-topics__item.sbecc-featured-topics__item_fg-action:hover {
+  color: var(--lwc-colorBrand); }
+
+/* DEBUG META */
+.sbecc-featured-topics__item .meta {
+  font-size: 8px;
+  color: #999;
+  list-style: none; }
+
+.sbecc-featured-topics__item .meta li {
+  float: left;
+  margin-right: 5px; }

@@ -1,0 +1,33 @@
+<template>
+    <lightning-layout-item>
+
+            <a href={topicLink} class={itemSettings.itemClass}>
+                <!-- ICONS TOP/RIGHT/LEFT -->
+                    <div class="sbecc-featured-topics__item-image" style={imageStyle}>
+                        <tempalte if:true={showIcon}>
+                            <img src={topic.images.featuredImageUrl} />
+                        </tempalte>
+                        <template if:false={showIcon}>
+                            <div class="icon-fake"></div>
+                        </template>
+                    </div>
+                    <div class="sbecc-featured-topics__item-wrap">
+                        <h3 class="sbecc-featured-topics__item-header">{topic.name}</h3>
+                        <template if:true={itemSettings.topicDesc}>
+                            <p class="sbecc-featured-topics__item-text">
+                                {topic.description}
+                            </p>
+                        </template>
+                        <template if:true={childTopics}>
+                            <template if:true={children}>
+                                    <template for:each={children} for:item="child">
+                                        <div key={child.id}>
+                                            {child.topic.name}
+                                        </div> 
+                                    </template>
+                            </template>
+                        </template>
+                    </div>
+            </a>
+    </lightning-layout-item>
+</template>

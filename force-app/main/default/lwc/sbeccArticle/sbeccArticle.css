@@ -1,0 +1,156 @@
+.sbecc-article {
+  min-height: 50px;
+  color: var(--lwc-colorTextWeak);
+  line-height: 1.735;
+  font-size: 1em; }
+  @media only screen and (max-width: 600px) {
+    .sbecc-article {
+      font-size: .85em; } }
+  @media only screen and (min-width: 601px) and (max-width: 1023px) {
+    .sbecc-article {
+      font-size: .9em; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .sbecc-article {
+      font-size: .95em; } }
+  .sbecc-article .sbecc-article_header {
+    margin-bottom: 2em;
+    padding-bottom: 2em; }
+    .sbecc-article .sbecc-article_header .sbecc-article_title {
+      text-transform: none;
+      margin-bottom: 0px; }
+    .sbecc-article .sbecc-article_header .sbecc-article_date {
+      margin-top: 1em;
+      font-weight: bold; }
+  .sbecc-article h1,
+  .sbecc-article h2,
+  .sbecc-article h3,
+  .sbecc-article h4,
+  .sbecc-article h5,
+  .sbecc-article h6 {
+    color: var(--lwc-colorTextDefault);
+    max-width: 80%;
+    line-height: 1.2;
+    text-transform: var(--lwc-textTransform); }
+  .sbecc-article h1 {
+    font-size: 4.05em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+    @media only screen and (max-width: 600px) {
+      .sbecc-article h1 {
+        font-size: 3.6em; } }
+    @media only screen and (min-width: 601px) and (max-width: 1023px) {
+      .sbecc-article h1 {
+        font-size: 3.75em; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+      .sbecc-article h1 {
+        font-size: 3.9; } }
+  .sbecc-article h2 {
+    font-size: 3.55em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em; }
+    @media only screen and (max-width: 600px) {
+      .sbecc-article h2 {
+        font-size: 3.0em; } }
+    @media only screen and (min-width: 601px) and (max-width: 1023px) {
+      .sbecc-article h2 {
+        font-size: 3.25em; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+      .sbecc-article h2 {
+        font-size: 3.40; } }
+  .sbecc-article h3 {
+    font-size: 2.25em;
+    font-weight: 800;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em; }
+  .sbecc-article h4 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em; }
+  .sbecc-article h5 {
+    font-size: 1.06em;
+    font-weight: 800;
+    margin-top: 0.94em;
+    margin-bottom: 0.94em; }
+  .sbecc-article h6 {
+    font-size: 1em;
+    font-weight: 800;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .sbecc-article p {
+    margin-bottom: 1.5em; }
+  .sbecc-article strong {
+    font-weight: 700; }
+  .sbecc-article em {
+    font-style: italic; }
+  .sbecc-article a {
+    color: var(--lwc-colorTextLink); }
+  .sbecc-article a:hover {
+    color: var(--lwc-colorTextLinkHover); }
+  .sbecc-article dl dt {
+    font-weight: bold; }
+  .sbecc-article table th, .sbecc-article table td {
+    padding: .75em; }
+  .sbecc-article table thead {
+    background: var(--lwc-colorBrand);
+    color: var(--lwc-colorTextButtonBrand); }
+    .sbecc-article table thead th {
+      vertical-align: bottom; }
+  .sbecc-article table tbody {
+    border-bottom: 1px solid var(--lwc-colorBorder); }
+    .sbecc-article table tbody th {
+      padding: .75em; }
+    .sbecc-article table tbody tr {
+      border-bottom: 1px solid var(--lwc-colorBorder); }
+    .sbecc-article table tbody td {
+      padding: .75em; }
+  .sbecc-article table caption {
+    padding-top: .75em;
+    padding-bottom: .75em;
+    color: #6c757d;
+    text-align: left;
+    caption-side: bottom; }
+  .sbecc-article ul,
+  .sbecc-article ol {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    padding-left: 1.1em;
+    margin-left: 1.5em;
+    list-style-position: outside; }
+  .sbecc-article li {
+    margin-bottom: 0.5em; }
+  .sbecc-article blockquote {
+    padding: 1em;
+    color: var(--lwc-colorTextWeak);
+    border-left: 2px solid var(--lwc-colorBrand);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px; }
+  .sbecc-article code,
+  .sbecc-article code.prettyprint {
+    display: block !important;
+    width: 100% !important;
+    padding: 1rem; }
+  .sbecc-article pre > code {
+    padding: 0px; }
+  .sbecc-article .sbecc-article_question {
+    padding: 2em;
+    border: 1px solid var(--lwc-colorBorder); }
+    .sbecc-article .sbecc-article_question .sbecc-article_question-header {
+      font-size: 2em;
+      margin-bottom: .5em;
+      margin-top: 0px; }
+    .sbecc-article .sbecc-article_question .sbecc-article_question-content p:last-child {
+      margin-bottom: 0px; }
+  .sbecc-article .sbecc-article_answer {
+    padding: 2em;
+    background: var(--lwc-colorBorder); }
+    .sbecc-article .sbecc-article_answer .sbecc-article_answer-header {
+      font-size: 2em;
+      margin-bottom: .5em;
+      margin-top: 0px; }
+
+.sbecc-errors h3 {
+  color: red;
+  font-size: 3rem;
+  font-style: italic; }

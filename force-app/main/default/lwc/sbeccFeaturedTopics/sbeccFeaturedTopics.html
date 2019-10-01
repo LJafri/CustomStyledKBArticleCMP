@@ -1,0 +1,29 @@
+<template>
+    <div class="sbecc-featured-topics">
+        <template if:false={childTopics}>
+            <h2 class="sbecc-featured-topics__title">{title}</h2>
+            <template if:true={topics}>
+                <div class="sbecc-featured-topics__list">
+                    <template for:each={topics} for:item="topic">
+                        <c-sbecc-featured-topics-item key={topic.id} topic={topic.topic} item-settings={itemSettings} child-topics={childTopics}></c-sbecc-featured-topics-item>
+                    </template>
+                </div>
+            </template>
+        </template>
+        <template if:true={childTopics}>
+            <template if:true={topics}>
+                <div class="sbecc-featured-topics__list">
+                    <template for:each={topics} for:item="topic">
+                            <template for:each={topic.children} for:item="child">
+                                <c-sbecc-featured-topics-item key={child.id} topic={child.topic} item-settings={itemSettings} child-topics={childTopics}></c-sbecc-featured-topics-item>
+                            </template>
+                    </template>
+                </div>
+            </template>
+        </template>
+        <template if:true={errors}>
+            <h3>Something's not right...</h3>
+            {error}
+        </template>
+    </div>
+</template>

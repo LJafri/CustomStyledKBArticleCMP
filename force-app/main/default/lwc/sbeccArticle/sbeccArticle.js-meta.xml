@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="sbeccArticle">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>SBECC - Article</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets='lightningCommunity__Default'>
+            <property name='fontSize' type='String' label="Base Font Size" default='17px' />
+            <property name='fontWeight' type='String' label="Font Weight" default='normal' />
+            <property name="objectName" type="String" label="Object API Name" default="Knowledge__kav" description="ie: FAQ__kav or Knowledge__kav" />
+            <property name="titleField" type="String" label="Title Field" default="Title"/>
+            <property name="dateField" type="String" label="Date Field" default="LastModifiedDate"/>
+            <property name="bodyField" type="String" label="Body Field" default="Body__c"/>
+            <property name="questionField" type="String" label="Question Field" default="Question__c"/>
+            <property name="answerField" type="String" label="Answer Field" default="Answer__c"/>
+            <property name="prettySkin" type="String" label="Code Highligting Theme" default="VibrantInk" datasource="Desert,Doxy,GitHub,Sunburst,VibrantInk"/>
+            <property name="recordId" type="String" default="{!recordId}"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

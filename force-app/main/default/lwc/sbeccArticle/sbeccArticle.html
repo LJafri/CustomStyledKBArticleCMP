@@ -1,0 +1,30 @@
+<template>
+    <div style={articleStyle}>
+        <article class="sbecc-article">
+            <header class="sbecc-article_header">
+                <template if:true={articleTitle}>
+                    <h1 class="sbecc-article_title">{articleTitle}</h1>
+                </template>
+                <template if:true={articleDate}>
+                    <div class="sbecc-article_date">
+                        <lightning-formatted-date-time value={articleDate}></lightning-formatted-date-time>
+                    </div>
+                </template>
+            </header>
+            <template if:true={qA}>
+                <div class="sbecc-article_question slds-hide">
+                    <div lwc:dom="manual" class="sbecc-article_question-content"></div>
+                </div>
+                <div class="sbecc-article_answer slds-hide">
+                    <div lwc:dom="manual" class="sbecc-article_answer-content"></div>
+                </div>
+            </template>
+            <div lwc:dom="manual" class="sbecc-article_body"></div>
+        </article>
+    </div>
+    <template if:true={errors}>
+        <div class="sbecc-errors">
+            <h3>Somethings not right...</h3>
+        </div>
+    </template>
+</template>

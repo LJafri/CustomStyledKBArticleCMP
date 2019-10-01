@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="sbeccFeaturedTopics">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>SBECC - Featured Topics</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="title" type="String" label="Header" default="Featured Topics"  />
+            <property name="networkName" type="String" label="Community Name" default="" />
+            <property name="topicType" type="String" label="Topic Source" datasource="Featured,Navigational,Child" default="Navigational" />
+            <property name="topicSlug" type="String" label="Topic Path" default="topic/" />
+            <property name="topicDesc" type="Boolean" label="Show Topic Descriptions?" default="false" />
+            <property name="iconLocation" type="String" label="Image Location" datasource="Top, Left, Right" default="Top" />
+            <property name="imageStyle" type="String" label="Image Style" datasource="Fill,Icon" default="Icon" />
+            <property name="imageSource" type="String" label="Image Source" datasource="Featured,Topic" default="Topic" />
+            <property name="textAlignment" type="String" label="Text Alignment" datasource="Left, Right, Center" default="Center" />
+            <property name="backGround" type="String" label="Background Color" default="White" datasource="Action, Black, White" />
+            <property name="fgColor" type="String" label="Forground Color" default="Action" datasource="Action, Black, White" />
+            <property name="topicId" type="String" default="{!topicId}"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
