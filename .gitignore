@@ -32,3 +32,4 @@ config/
 .prettierrc
 .prettierignore
 create_scratch_org
+mdapioutput/
