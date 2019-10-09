@@ -27,7 +27,7 @@ public class sbeccTestArticleController {
                   // Set Fields/Objects/Ids
                   List<String> fields = new list<String> {'Title', 'UrlName'};
                   test.startTest();
-                  sbeccArticleController.getArticle(k.Id, objectName, fields);
+                  System.assertNotEquals(sbeccArticleController.getArticle(k.Id, objectName, fields), null);
                   test.stopTest();
               } catch (QueryException e) {
                 System.debug('Error: ' + e.getMessage());

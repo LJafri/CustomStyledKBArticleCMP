@@ -32,6 +32,9 @@ public class sbeccTestTopicController {
             List <ConnectApi.ManagedTopic> blat = sbeccTopicController.getTopics(networkName, 'Navigational', topicId);
             //Test Navigational Type
             List <ConnectApi.ManagedTopic> derp = sbeccTopicController.getTopics(networkName, 'Test', topicId);
+            System.assert(!topics.isEmpty());
+            System.assert(!blat.isEmpty());
+            System.assert(!derp.isEmpty());
         Test.stopTest(); 
         //End Test
     }

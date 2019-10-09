@@ -11,6 +11,9 @@
             ],
             "c/sbeccFeaturedTopicsItem": [
                 "sbeccFeaturedTopicsItem/sbeccFeaturedTopicsItem.js"
+            ],
+            "c/prettify": [
+                "../staticresources/sbeccStaticFiles/prettify/prettify.js"
             ]
         }
     },
